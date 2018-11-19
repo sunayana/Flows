@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RhinoUI major_ver="3" minor_ver="0" guid="6fbd18ca-bdce-44ae-ba8f-3c2c463e52f9" localize="False" default_language_id="1033" dpi_scale="125">
+  <extend_rhino_menus>
+    <menu guid="d58ceae7-fdb0-4104-80da-274b94ad44a9">
+      <text>
+        <locale_1033>Extend Rhino Menus</locale_1033>
+      </text>
+    </menu>
+  </extend_rhino_menus>
+  <menus>
+    <menu guid="130a9a5b-5620-4588-9641-13d67d4a1907">
+      <text>
+        <locale_1033>Flows</locale_1033>
+      </text>
+      <menu_item guid="7648b550-b008-42ab-b2b3-f1b8f4ace597" DemandLoadUpdatePlugIn="True">
+        <text>
+          <locale_1033>Sample Flow</locale_1033>
+        </text>
+        <macro_id>90f0f524-74ee-415c-b810-3b9ee32e002e</macro_id>
+      </menu_item>
+    </menu>
+  </menus>
+  <tool_bar_groups>
+    <tool_bar_group guid="116f285d-e694-4f90-931a-2ff4f2aec82c" dock_bar_guid32="00000000-0000-0000-0000-000000000000" dock_bar_guid64="df0e0f0c-3de2-44a4-a42b-ff79e8180a15" active_tool_bar_group="5bc32068-5066-490b-ace9-ab81b6af9760" single_file="False" hide_single_tab="False" point_floating="-97,263">
+      <text>
+        <locale_1033>SampleFlow</locale_1033>
+      </text>
+      <tool_bar_group_item guid="5bc32068-5066-490b-ace9-ab81b6af9760" major_version="1" minor_version="1">
+        <text>
+          <locale_1033>SampleFlow</locale_1033>
+        </text>
+        <tool_bar_id>dabe1c72-c8ea-45bb-a0ee-2a794748d5ae</tool_bar_id>
+      </tool_bar_group_item>
+      <dock_bar_info dpi_scale="125" dock_bar="False" docking="True" horz="False" visible="True" floating="False" mru_float_style="8192" bar_id="59468" mru_width="868" point_pos="72,0" float_point="-97,263" rect_mru_dock_pos="72,0,251,737" dock_location_u="59420" dock_location="left" float_size="243,317" />
+    </tool_bar_group>
+  </tool_bar_groups>
+  <tool_bars>
+    <tool_bar guid="dabe1c72-c8ea-45bb-a0ee-2a794748d5ae" bitmap_id="cd2708eb-ddd7-4aa5-9efc-88285df764a4" item_display_style="control_and_text">
+      <text>
+        <locale_1033>SampleFlow</locale_1033>
+      </text>
+      <tool_bar_item guid="bd0485e4-51c0-4059-a12d-40ce0c3880f3" button_style="spacer" />
+      <tool_bar_item guid="6fd93cce-9680-489f-a7c9-809f0c418b8d">
+        <text>
+          <locale_1033>Toolbar item 01</locale_1033>
+        </text>
+        <left_macro_id>1c2dd8da-7aff-4216-9135-f52026a4cd29</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="39c83410-7f02-4b5b-884d-431bec3631d2" button_style="spacer" />
+      <tool_bar_item guid="a86b965b-e5d2-4242-b172-5ccb5b2bb5ee">
+        <text>
+          <locale_1033>Toolbar item</locale_1033>
+        </text>
+        <left_macro_id>40c6d8df-184a-4049-a36c-85f927fd00b8</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="371ca6b0-cdb4-4171-975b-c6cb70a70616" button_style="spacer" />
+      <tool_bar_item guid="7a0e567d-c7ff-48e9-b7f5-13909787d43c">
+        <text>
+          <locale_1033>Toolbar item 00</locale_1033>
+        </text>
+        <left_macro_id>cb9aa0d2-51ac-4aa4-99be-05cb048902ab</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="4cea6175-9f6e-4ee2-b7f3-99879044e5d9" button_style="spacer" />
+      <tool_bar_item guid="deec811c-2337-4aea-9d61-d78178796163">
+        <text>
+          <locale_1033>Toolbar item 02</locale_1033>
+        </text>
+        <left_macro_id>10ffc0ba-fd49-4808-aff5-83ae3bdc7526</left_macro_id>
+      </tool_bar_item>
+      <tool_bar_item guid="b70a0905-30b1-4e79-b5a6-b4bf53ecffc1" button_style="spacer" />
+    </tool_bar>
+  </tool_bars>
+  <macros>
+    <macro_item guid="40c6d8df-184a-4049-a36c-85f927fd00b8" bitmap_id="028c26ff-d84b-47d5-8af1-ac55eaa9b74b">
+      <text>
+        <locale_1033>Import Geometry</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Import Geometry</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Import Geometry</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Import Geometry</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Import Geometry</locale_1033>
+      </menu_text>
+    </macro_item>
+    <macro_item guid="cb9aa0d2-51ac-4aa4-99be-05cb048902ab" bitmap_id="de578d0f-fe73-4c23-b8db-f1e5651b0279">
+      <text>
+        <locale_1033>Sample Step</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Sample Step</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Sample Step</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Sample Step</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Sample Step</locale_1033>
+      </menu_text>
+    </macro_item>
+    <macro_item guid="90f0f524-74ee-415c-b810-3b9ee32e002e" bitmap_id="10d8febb-32e3-4183-af55-e55e5bb6bac5">
+      <text>
+        <locale_1033>Sample Flow</locale_1033>
+      </text>
+      <help_text>
+        <locale_1033>Sample Flow</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Sample Flow</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Sample Flow</locale_1033>
+      </menu_text>
+      <script>!
+_NoEcho
+_ShowToolbar "SampleFlow" _Enter
+</script>
+    </macro_item>
+    <macro_item guid="1c2dd8da-7aff-4216-9135-f52026a4cd29" bitmap_id="bc25f59d-2746-42f0-9338-f13f00ae5905">
+      <text>
+        <locale_1033>Start Flow</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Start Flow</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Start Flow</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Start Flow</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Start Flow</locale_1033>
+      </menu_text>
+      <script>StartFlow</script>
+    </macro_item>
+    <macro_item guid="10ffc0ba-fd49-4808-aff5-83ae3bdc7526" bitmap_id="804525bf-0ae8-415e-86b6-02e1220b4276">
+      <text>
+        <locale_1033>Stop Flow</locale_1033>
+      </text>
+      <tooltip>
+        <locale_1033>Stop Flow</locale_1033>
+      </tooltip>
+      <help_text>
+        <locale_1033>Stop Flow</locale_1033>
+      </help_text>
+      <button_text>
+        <locale_1033>Stop Flow</locale_1033>
+      </button_text>
+      <menu_text>
+        <locale_1033>Stop Flow</locale_1033>
+      </menu_text>
+    </macro_item>
+  </macros>
+  <bitmaps>
+    <small_bitmap item_width="16" item_height="16">
+      <bitmap_item guid="cd2708eb-ddd7-4aa5-9efc-88285df764a4" index="0" />
+      <bitmap_item guid="028c26ff-d84b-47d5-8af1-ac55eaa9b74b" index="1" />
+      <bitmap_item guid="de578d0f-fe73-4c23-b8db-f1e5651b0279" index="2" />
+      <bitmap_item guid="10d8febb-32e3-4183-af55-e55e5bb6bac5" index="3" />
+      <bitmap_item guid="bc25f59d-2746-42f0-9338-f13f00ae5905" index="4" />
+      <bitmap_item guid="804525bf-0ae8-415e-86b6-02e1220b4276" index="5" />
+      <bitmap>iVBORw0KGgoAAAANSUhEUgAAABAAAABgCAYAAAAU0fKgAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAScQAAEnEB89x6jgAAAQ9JREFUWEft1z1KA0EAhuFFsAoG+2DAJrmAdolYmUYQSc4g2Aiid7AO
+JK0JpDBFcoOANhaCjWBlsPMGgj8o6PvtENFiV0ZsAt8LD+xMloHs7BaT/HcNDHCMBU3EVME7LvCE
+Q0S1gw+UcYlTRLWEO2iRF2wgugK0wF46+mNaYILFdBRawTVe0dFEXlpA7jHGCLfQ3zuAfqsjM91w
+hBOcYYgbTKHt1e81ZKYbWuHyqxKu8Iy2JvJ6xH64/FEVuyimo5z6eMB6Ogpt4Q2zZ6Mtz2wZeht1
+83fn0G7oehu/toYm9Dy60OutN1RbuYqo9GHp2+hhUxPOOeecc/OTzws+L8zSDT4vhHxecM4559xc
+liSfTiZq7y9BFP8AAAAASUVORK5CYII=</bitmap>
+    </small_bitmap>
+    <normal_bitmap item_width="24" item_height="24">
+      <bitmap_item guid="cd2708eb-ddd7-4aa5-9efc-88285df764a4" index="0" />
+      <bitmap_item guid="028c26ff-d84b-47d5-8af1-ac55eaa9b74b" index="1" />
+      <bitmap_item guid="de578d0f-fe73-4c23-b8db-f1e5651b0279" index="2" />
+      <bitmap_item guid="10d8febb-32e3-4183-af55-e55e5bb6bac5" index="3" />
+      <bitmap_item guid="bc25f59d-2746-42f0-9338-f13f00ae5905" index="4" />
+      <bitmap_item guid="804525bf-0ae8-415e-86b6-02e1220b4276" index="5" />
+      <bitmap>iVBORw0KGgoAAAANSUhEUgAAABgAAACQCAYAAAASlKtNAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAScQAAEnEB89x6jgAABS5JREFUaEPtmkmIJEUUhmscZ9QRHXTcdxEGwW0UF8TBdhm0kZbp6amq
+rOpqbJeZQkTUcUNBaFBE8SCIoIKeRFzw5EHcl4szHsSjBw9exIueXMAFt/+LjCq7MiMzIrJtRYkP
+fjoiK/O9yBcvXlZGdSuRSCQSiUQi0YhHrFaNZ6xWjeTAS3LgJTnw8t9xsJ90Zt6coMoB53JNMCdK
+P0m7Te8vXA6GEudyTRQ7pJ+l600vp+jgBolzZk2vgs+kU/Jmia6EgYHpTTpYkPisY3plsInt1h/S
++TQqmJcwlEkjBz17rC9VgU1sex3AooTBt6S3bfs6qY4oB7BL+l36TbqJAx6iHcCrViE0chDDhAPS
+7IS/Wdg0Dj63jdUQtmshl++XyJyvpF+saHPsPulkKRoueln6VfpIekC6VrrQijbH9kmc86IUXCpY
+WD9Ir0lnccDDOdLr0vcSC7CWu6QfJd8icnGjRNG7w/QcMHKMX2l6zbhawgk1bAJiTliajLwIK/47
+iVQdw4QS8yoelZ6WQh8qb0ov5M08FcmEugk9Q/paelYKcXKehM2T6JDne2l44LEY4+QT6R4aLBhy
+OgScfCOFOHlQeoMGq5KFEwqhDHEyJ31Jg6XP6ozhbAknT5iem0skHkwrcvC46bkZO4gN0ci4L213
+SiZEMZMcahwekswkU3Kpij5ijMOn0t00KBMsCqpiFbHGeVxic1zCqeeU3CoelsiYEOPwrvR83szB
+E/WckrtSbpa+lY43vWXwsKDUXmV6zbhGIjXbpueAhwVOKLmxMHKM32Z6NfCwoJ5TcqmKPpjQdyTC
+UjnyIjwsqOdkAlWRwkVtYXUiFhF5TipyDhNainkI1HNKLguGVUkIEG2OkefRLx6JRCKRSCQSif8j
+6yU2X1+R3pfes/pAYn+Dzdp1UiP4psxuF1/pj+VAgeOkOyXOqd27LrJG4nXpSekgDnjYID0l8c7M
+tV4wvidvRnGvVPdibiAsjLwpbJxvz5tlmFDi6QoLbzqb82YtB0tsDTknnmyp2tBjJ+ALiXc3X5wJ
+VWnPDkhFV7YADniD5MdqNsc3SVXwVvRS3pyEPK8CB9vyZuty6WPpCtNzwzopwQKqYrkD4A64EzYL
+XThtNXHAm6YLZzSct2VZ7oCNWzLlUtNz86H9OwG1heXvYjTJj0lM4GFSFWyTsrlSgsJFbXGBA9KU
+H4t8aco2qfONn8XBQqO2FNkinZY3azlEInz7m54DqiKFqynPSTN5sxoKFqsxFsLIHHkhxjihcFFb
+fBAWRo7xoHI9gnART+7GbHIXGP2+wznesFTBxFO4SE3WCYuRRUSek4pkS+WEJhL/IMPhcF273b64
+0+l0Ua/Xu2hqamrl6bm4uHhgt9sdZFk7m5+fYxOdlbpGzk7lmJz1Jb6NxKNRHi3ju6anpw+wh0ow
+ADnYvbCw4yh7KAyMcqHtesmyzjDqTnT783UjL2JD6f0l1sDkaTSlL06zs7ObdPwYpDk43B4eg4Ol
+pSX/7wtkSJZlVMoxGJeBW2R8K9Id3q6/G+3HBl2zWef4N9N1Iv9KMlHX7ci32i6j3dbv94+wXYM+
+X9vrtf27700dENogB7r4AvLcdg3EXGG5Vc4vQ71eZ89gMDjUfmzo9+dOV3jPtd1quFUWke2O0fGN
+jBoVjYM+7wdNMnAyqWe7XmZmZja4BlWJHKxn8diuF86lXtluGIr7kVxYdyf5yDvD4oQHw50QLkSe
+6+9asoUJzY+1s+iRu8Awi4g01N+d6m8JntDEv0yr9ScDO3uSDamaggAAAABJRU5ErkJggg==</bitmap>
+    </normal_bitmap>
+    <large_bitmap item_width="32" item_height="32">
+      <bitmap_item guid="cd2708eb-ddd7-4aa5-9efc-88285df764a4" index="0" />
+      <bitmap_item guid="028c26ff-d84b-47d5-8af1-ac55eaa9b74b" index="1" />
+      <bitmap_item guid="de578d0f-fe73-4c23-b8db-f1e5651b0279" index="2" />
+      <bitmap_item guid="10d8febb-32e3-4183-af55-e55e5bb6bac5" index="3" />
+      <bitmap_item guid="bc25f59d-2746-42f0-9338-f13f00ae5905" index="4" />
+      <bitmap_item guid="804525bf-0ae8-415e-86b6-02e1220b4276" index="5" />
+      <bitmap>iVBORw0KGgoAAAANSUhEUgAAACAAAADACAYAAABlPmF2AAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAScQAAEnEB89x6jgAAAC5JREFUeF7twQEBAAAAgiD/r25IQAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAwLkaYMAAAeEoYg8AAAAASUVORK5CYIIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</bitmap>
+    </large_bitmap>
+  </bitmaps>
+  <scripts />
+</RhinoUI>
