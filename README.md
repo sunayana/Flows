@@ -6,9 +6,14 @@ A flow based plugin can be defined as a plugin with a stipulated number of steps
 
 ## Documentation
 
-For further documentation about the creation of the rhino ui please refer to `docs/FlowBasedPlugin.md`.
+- [How to create Flow Based Plugins](docs/FlowBasedPlugin.md)
+- [Unit Testing with Google Test](docs/UnitTestSampleFlow.md)
 
 ## Acknowledgements
+
+### Projects
+
+- [Moose by Dale Fugier](https://github.com/dalefugier/Moose/) : Especially the [MooseCoreLib](https://github.com/dalefugier/Moose/tree/6/MooseCoreLib) was quite useful as a hint project to setup the Google Test environment for the Sample Flow plugin without using the Rhino executable.
 
 ### Icons
 

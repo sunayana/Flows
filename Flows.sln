@@ -5,16 +5,30 @@ VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SampleFlow", "SampleFlow\SampleFlow.vcxproj", "{8C6485D7-5BCD-48B9-9CCA-0FC128523F96}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SampleFlowTest", "SampleFlowGoogleTest\SampleFlowGoogleTest.vcxproj", "{35C7C323-E3A3-41F5-AC8F-634861187921}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{8C6485D7-5BCD-48B9-9CCA-0FC128523F96}.Debug|x64.ActiveCfg = Debug|x64
 		{8C6485D7-5BCD-48B9-9CCA-0FC128523F96}.Debug|x64.Build.0 = Debug|x64
+		{8C6485D7-5BCD-48B9-9CCA-0FC128523F96}.Debug|x86.ActiveCfg = Debug|x64
 		{8C6485D7-5BCD-48B9-9CCA-0FC128523F96}.Release|x64.ActiveCfg = Release|x64
 		{8C6485D7-5BCD-48B9-9CCA-0FC128523F96}.Release|x64.Build.0 = Release|x64
+		{8C6485D7-5BCD-48B9-9CCA-0FC128523F96}.Release|x86.ActiveCfg = Release|x64
+		{35C7C323-E3A3-41F5-AC8F-634861187921}.Debug|x64.ActiveCfg = Debug|x64
+		{35C7C323-E3A3-41F5-AC8F-634861187921}.Debug|x64.Build.0 = Debug|x64
+		{35C7C323-E3A3-41F5-AC8F-634861187921}.Debug|x86.ActiveCfg = Debug|Win32
+		{35C7C323-E3A3-41F5-AC8F-634861187921}.Debug|x86.Build.0 = Debug|Win32
+		{35C7C323-E3A3-41F5-AC8F-634861187921}.Release|x64.ActiveCfg = Release|x64
+		{35C7C323-E3A3-41F5-AC8F-634861187921}.Release|x64.Build.0 = Release|x64
+		{35C7C323-E3A3-41F5-AC8F-634861187921}.Release|x86.ActiveCfg = Release|Win32
+		{35C7C323-E3A3-41F5-AC8F-634861187921}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

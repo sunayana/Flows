@@ -1,14 +1,19 @@
-// stdafx.h : include file for standard system include files,
-// or project specific include files that are used frequently, but
-// are changed infrequently
+//
+// pch.h
+// Header for standard system include files.
+//
 
 #pragma once
+
+#include "gtest/gtest.h"
+
+#include "targetver.h"
 
 #ifndef VC_EXTRALEAN
 #define VC_EXTRALEAN                             // Exclude rarely-used stuff from Windows headers
 #endif
 
-// This plug-in is Rhino 6 ready
+// This DLL is Rhino 6 ready
 #define RHINO_V6_READY
 
 // If you want to use Rhino's MFC UI classes, then
@@ -16,13 +21,15 @@
 // Note, doing so will requrie that your plug-in is
 // built with the same version of Visual Studio as was
 // used to build Rhino.
-#define RHINO_SDK_MFC
+//#define RHINO_SDK_MFC
 
-// Plug-ins must use the release version of MFC used by Rhino.
-// Plug-ins that require debugging information need to be built with
+// DLLs must use the release version of MFC used by Rhino.
+// DLLs that require debugging information need to be built with
 // RHINO_DEBUG_PLUGIN defined.
+//Note that in the project properties for the preprocessor directives we
+//do not define RHINO_DEBUG_PLUGIN in Preprocessor definitions.
 #if defined(RHINO_DEBUG_PLUGIN) && defined(_DEBUG)
-//  Rhino 6 Debug plug-ins should define RHINO_DEBUG_PLUGIN, 
+//  Rhino 6 Debug DLLs should define RHINO_DEBUG_PLUGIN, 
 //  but not define _DEBUG in the .vcxproj file.
 #error Do not define _DEBUG - use RHINO_DEBUG_PLUGIN instead
 #endif
@@ -44,6 +51,7 @@
 #ifndef _AFX_NO_DB_SUPPORT
 #include <afxdb.h>                               // MFC ODBC database classes
 #endif // _AFX_NO_DB_SUPPORT
+
 
 #ifndef _AFX_NO_DAO_SUPPORT
 #include <afxdao.h>                              // MFC DAO database classes
@@ -70,7 +78,7 @@
 #include "rhinoSdk.h"
 
 // Rhino Render Development Kit (RDK) classes
-#include "RhRdkHeaders.h"
+#include "RhRdkHeaders.h" 
 
 // TODO: include additional Rhino-related header files here
 

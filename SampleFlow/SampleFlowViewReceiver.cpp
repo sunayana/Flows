@@ -67,7 +67,8 @@ CRhinoCommand::result CSampleFlowViewReceiver::createSampleFlowView( const CRhin
 
 CRhinoCommand::result CSampleFlowViewReceiver::action( const CRhinoCommandContext& context )
 {
-    auto result = createSampleFlowView(context);
+    const auto result = createSampleFlowView(context);
 
-    return CRhinoCommand::success;
+    //return CRhinoCommand::success;
+    return result;
 }
