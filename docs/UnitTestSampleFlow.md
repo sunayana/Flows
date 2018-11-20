@@ -20,4 +20,4 @@ In this document we describe how to setup test for Rhino 6 plugins using Google 
   
 4. Then we add the [targetver.h](../SampleFlowTest/targetver.h) and add necessary changes to [pch.h](../SampleFlowTest/pch.h) so as to make the test project Rhino 6 ready.
 
-The project should now compile successfully.
+The `SampleFlowTest` project should now compile successfully.
