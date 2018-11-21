@@ -74,6 +74,8 @@
 
 // TODO: include additional Rhino-related header files here
 
+#include "rhinoSdkApp.h"
+
 #if defined(RHINO_DEBUG_PLUGIN)
 // Now that all the system headers are read, we can
 // safely define _DEBUG so the developers can test
