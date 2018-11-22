@@ -21,7 +21,7 @@
     </menu>
   </menus>
   <tool_bar_groups>
-    <tool_bar_group guid="116f285d-e694-4f90-931a-2ff4f2aec82c" dock_bar_guid32="00000000-0000-0000-0000-000000000000" dock_bar_guid64="df0e0f0c-3de2-44a4-a42b-ff79e8180a15" active_tool_bar_group="5bc32068-5066-490b-ace9-ab81b6af9760" single_file="False" hide_single_tab="False" point_floating="-97,263">
+    <tool_bar_group guid="116f285d-e694-4f90-931a-2ff4f2aec82c" dock_bar_guid32="00000000-0000-0000-0000-000000000000" dock_bar_guid64="df0e0f0c-3de2-44a4-a42b-ff79e8180a15" active_tool_bar_group="5bc32068-5066-490b-ace9-ab81b6af9760" single_file="False" hide_single_tab="False" point_floating="-75,177">
       <text>
         <locale_1033>SampleFlow</locale_1033>
       </text>
@@ -31,7 +31,7 @@
         </text>
         <tool_bar_id>dabe1c72-c8ea-45bb-a0ee-2a794748d5ae</tool_bar_id>
       </tool_bar_group_item>
-      <dock_bar_info dpi_scale="125" dock_bar="False" docking="True" horz="False" visible="True" floating="False" mru_float_style="8192" bar_id="59468" mru_width="868" point_pos="72,0" float_point="-97,263" rect_mru_dock_pos="72,0,251,737" dock_location_u="59420" dock_location="left" float_size="243,317" />
+      <dock_bar_info dpi_scale="125" dock_bar="False" docking="True" horz="False" visible="True" floating="False" mru_float_style="8192" bar_id="59468" mru_width="868" point_pos="72,0" float_point="-75,177" rect_mru_dock_pos="72,0,251,809" dock_location_u="59420" dock_location="left" float_size="243,317" />
     </tool_bar_group>
   </tool_bar_groups>
   <tool_bars>
