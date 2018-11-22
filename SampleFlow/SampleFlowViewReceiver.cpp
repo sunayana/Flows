@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "SampleFlowViewReceiver.h"
+#include "SampleFlowApp.h"
 
 CRhinoCommand::result CSampleFlowViewReceiver::createSampleFlowView( const CRhinoCommandContext& context )
 {
@@ -48,12 +49,15 @@ CRhinoCommand::result CSampleFlowViewReceiver::createSampleFlowView( const CRhin
         view->ActiveViewport().SetToPerspectiveView(v.m_name);
 
         //view->FloatRhinoView(true);
-        /* context.m_doc.Get
-         CRhinoDisplaySettings displaySettings;
-         displaySettings.m_background_color_in_rendered_views = ON_Color::White;
-         CRhinoAppSettings::SetDisplaySettings(displaySettings);*/
+        
+        //Changes the all the viewport background color to white
+        CRhinoAppAppearanceSettings settings = RhinoApp().AppSettings().AppearanceSettings(true);
+        settings.m_viewport_background_color = ON_Color::White;
+        RhinoApp().AppSettings().SetAppearanceSettings(settings);
+
         
 
+        
         view->Redraw();
     }
     else
