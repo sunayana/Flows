@@ -2,7 +2,12 @@
 #include "SampleFlowViewReceiver.h"
 #include "SampleFlowApp.h"
 
-CRhinoCommand::result CSampleFlowViewReceiver::createSampleFlowView( const CRhinoCommandContext& context )
+#include <experimental/filesystem>
+namespace fs = std::experimental::filesystem;
+
+
+
+CRhinoCommand::result CSampleFlowViewReceiver::createSampleFlowView( const CRhinoCommandContext& context)
 {
     ON_SimpleArray< ON_UUID > viewport_ids;
     ON_SimpleArray< CRhinoView* > view_list;
@@ -20,6 +25,7 @@ CRhinoCommand::result CSampleFlowViewReceiver::createSampleFlowView( const CRhin
     }
     view_list.Empty();
 
+    
 
     // Create a new view
     context.m_doc.NewView(ON_3dmView(), true);
@@ -47,17 +53,10 @@ CRhinoCommand::result CSampleFlowViewReceiver::createSampleFlowView( const CRhin
 
         view->ActiveViewport().SetView(v);
         view->ActiveViewport().SetToPerspectiveView(v.m_name);
-
-        //view->FloatRhinoView(true);
         
-        //Changes the all the viewport background color to white
-        CRhinoAppAppearanceSettings settings = RhinoApp().AppSettings().AppearanceSettings(true);
-        settings.m_viewport_background_color = ON_Color::White;
-        RhinoApp().AppSettings().SetAppearanceSettings(settings);
-
         
 
-        
+       
         view->Redraw();
     }
     else
@@ -69,10 +68,12 @@ CRhinoCommand::result CSampleFlowViewReceiver::createSampleFlowView( const CRhin
 }
 
 
+
+
 CRhinoCommand::result CSampleFlowViewReceiver::action( const CRhinoCommandContext& context )
 {
+    
     const auto result = createSampleFlowView(context);
 
-    //return CRhinoCommand::success;
     return result;
 }

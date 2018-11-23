@@ -10,4 +10,5 @@ public:
 
 private:
     static CRhinoCommand::result createSampleFlowView( const CRhinoCommandContext& context );
+
 };

@@ -36,6 +36,9 @@
     <ClCompile Include="SampleFlowViewReceiver.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SampleFlowViewColorsConduit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SampleFlowApp.h">
@@ -57,6 +60,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SampleFlowViewReceiver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleFlowViewColorsConduit.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
