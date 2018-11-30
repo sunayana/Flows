@@ -56,10 +56,6 @@ CRhinoCommand::result CSampleFlowViewReceiver::createSampleFlowView( const CRhin
         view->ActiveViewport().SetView(v);
         view->ActiveViewport().SetToPerspectiveView(v.m_name);
         
-
-        const CRhinoDisplayPipeline dp(view->ActiveViewport());
-        conduit.Bind(view->ActiveViewport());
-        
         
         if (conduit.IsEnabled())
         {
@@ -92,3 +88,7 @@ CRhinoCommand::result CSampleFlowViewReceiver::action( const CRhinoCommandContex
 
     return result;
 }
+
+
+
+

@@ -20,4 +20,5 @@ public:
 private:
     bool OnInitFrameBuffer(CRhinoDisplayPipeline& dp, bool& bTerminate) const;
     bool OnDrawBackground(CRhinoDisplayPipeline& dp, bool& bTerminate) const;
+
 };
