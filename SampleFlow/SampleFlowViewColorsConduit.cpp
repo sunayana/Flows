@@ -49,7 +49,14 @@ bool CSampleFlowViewColorsConduit::OnInitFrameBuffer(CRhinoDisplayPipeline& dp, 
     }
 
     const CRhinoViewport* viewport = dp.GetRhinoVP();
-    if (viewport && viewport->VP().Projection() == ON::perspective_view)
+    /*if (viewport && viewport->VP().Projection() == ON::perspective_view)
+    {
+        m_pChannelAttrs->m_eFrameBufferFillMode = FBFM_SOLID_COLOR;
+        m_pChannelAttrs->m_SolidColor = m_background_color;
+    }*/
+    // The Sample Flow View viewport background color is changed to white and the 
+    // z-axis points up.
+    if (viewport && viewport->m_v.m_name == L"Sample Flow View")
     {
         m_pChannelAttrs->m_eFrameBufferFillMode = FBFM_SOLID_COLOR;
         m_pChannelAttrs->m_SolidColor = m_background_color;
@@ -64,7 +71,10 @@ bool CSampleFlowViewColorsConduit::OnDrawBackground(CRhinoDisplayPipeline& dp, b
     UNREFERENCED_PARAMETER(bTerminate);
 
     const CRhinoViewport* viewport = dp.GetRhinoVP();
-    if (viewport && viewport->VP().Projection() == ON::perspective_view)
+
+
+    // Modify only the Sample Flow View.
+    if (viewport && viewport->m_v.m_name == L"Sample Flow View")/**&& viewport->VP().Projection() == ON::perspective_view)**/
     {
         dp.DrawConstructionPlane(
             viewport->ConstructionPlane(),

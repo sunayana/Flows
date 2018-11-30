@@ -55,6 +55,7 @@ CCommandStartFlow::CCommandStartFlow()
 // Command to create a new view that has the properties of an existing view.
 CRhinoCommand::result CCommandStartFlow::RunCommand( const CRhinoCommandContext& context )
 {   
-    m_conduit.BindingCount();
+    AFX_MANAGE_STATE(::RhinoApp().RhinoModuleState());
+
     return CSampleFlowViewReceiver::action(context, m_conduit);
 }

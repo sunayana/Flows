@@ -8,13 +8,10 @@ public:
     CSampleFlowViewReceiver() = default;
 
     static CRhinoCommand::result action( const CRhinoCommandContext& context,
-        CSampleFlowViewColorsConduit& conduit);
+                                         CSampleFlowViewColorsConduit& conduit );
 
 private:
-    static CRhinoCommand::result createSampleFlowView( const CRhinoCommandContext& context, 
+    static CRhinoCommand::result createSampleFlowView(  const CRhinoCommandContext& context, 
         CSampleFlowViewColorsConduit& conduit );
-    //static void setConduit(CSampleFlowViewColorsConduit& conduit);
-
-    //CSampleFlowViewColorsConduit m_conduit;
 
 };
