@@ -54,16 +54,7 @@ CCommandStartFlow::CCommandStartFlow()
 
 // Command to create a new view that has the properties of an existing view.
 CRhinoCommand::result CCommandStartFlow::RunCommand( const CRhinoCommandContext& context )
-{
-    if (m_conduit.IsEnabled())
-    {
-        m_conduit.Disable();
-    }
-    else
-    {
-        m_conduit.Enable(context.m_doc.RuntimeSerialNumber());
-    }
-    context.m_doc.Regen();
-
-    return CSampleFlowViewReceiver::action(context);
+{   
+    m_conduit.BindingCount();
+    return CSampleFlowViewReceiver::action(context, m_conduit);
 }

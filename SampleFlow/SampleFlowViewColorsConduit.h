@@ -4,7 +4,10 @@ class CSampleFlowViewColorsConduit : public CRhinoDisplayConduit
 {
 public:
     CSampleFlowViewColorsConduit();
+    
     bool ExecConduit(CRhinoDisplayPipeline& dp, UINT nChannel, bool& bTerminate) override;
+
+    
 
 public:
     ON_Color m_background_color;
@@ -16,5 +19,5 @@ public:
 
 private:
     bool OnInitFrameBuffer(CRhinoDisplayPipeline& dp, bool& bTerminate) const;
-    bool OnDrawBackground(CRhinoDisplayPipeline& dp, bool& bTerminate);
+    bool OnDrawBackground(CRhinoDisplayPipeline& dp, bool& bTerminate) const;
 };

@@ -7,6 +7,7 @@ A flow based plugin can be defined as a plugin with a stipulated number of steps
 ## Documentation
 
 - [How to create Flow Based Plugins](docs/FlowBasedPlugin.md)
+- [How to create Start Flow Command](docs/StartFlow.md)
 - [Unit Testing with Google Test](docs/UnitTestSampleFlow.md)
 
 ## Acknowledgements

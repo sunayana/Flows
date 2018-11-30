@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "SampleFlowViewReceiver.h"
+#include "SampleFlowViewColorsConduit.h"
 #include "SampleFlowApp.h"
 
 #include <experimental/filesystem>
@@ -7,7 +8,8 @@ namespace fs = std::experimental::filesystem;
 
 
 
-CRhinoCommand::result CSampleFlowViewReceiver::createSampleFlowView( const CRhinoCommandContext& context)
+CRhinoCommand::result CSampleFlowViewReceiver::createSampleFlowView( const CRhinoCommandContext& context, 
+    CSampleFlowViewColorsConduit& conduit)
 {
     ON_SimpleArray< ON_UUID > viewport_ids;
     ON_SimpleArray< CRhinoView* > view_list;
@@ -54,9 +56,21 @@ CRhinoCommand::result CSampleFlowViewReceiver::createSampleFlowView( const CRhin
         view->ActiveViewport().SetView(v);
         view->ActiveViewport().SetToPerspectiveView(v.m_name);
         
-        
 
-       
+        const CRhinoDisplayPipeline dp(view->ActiveViewport());
+        conduit.Bind(view->ActiveViewport());
+        
+        
+        if (conduit.IsEnabled())
+        {
+            conduit.Disable();
+        }
+        else
+        {
+            conduit.Enable(context.m_doc.RuntimeSerialNumber());
+        }
+        context.m_doc.Regen();
+
         view->Redraw();
     }
     else
@@ -70,10 +84,11 @@ CRhinoCommand::result CSampleFlowViewReceiver::createSampleFlowView( const CRhin
 
 
 
-CRhinoCommand::result CSampleFlowViewReceiver::action( const CRhinoCommandContext& context )
+CRhinoCommand::result CSampleFlowViewReceiver::action( const CRhinoCommandContext& context,
+    CSampleFlowViewColorsConduit& conduit)
 {
     
-    const auto result = createSampleFlowView(context);
+    const auto result = createSampleFlowView(context, conduit);
 
     return result;
 }

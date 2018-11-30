@@ -12,6 +12,7 @@ CSampleFlowViewColorsConduit::CSampleFlowViewColorsConduit() :
     m_grid_z_axis_color = ON_UNSET_COLOR;
 }
 
+
 bool CSampleFlowViewColorsConduit::ExecConduit(CRhinoDisplayPipeline& dp, UINT nChannel, bool& bTerminate)
 {
     if (dp.IsPrinting())
@@ -30,6 +31,11 @@ bool CSampleFlowViewColorsConduit::ExecConduit(CRhinoDisplayPipeline& dp, UINT n
 
     return true;
 }
+
+
+
+
+
 
 bool CSampleFlowViewColorsConduit::OnInitFrameBuffer(CRhinoDisplayPipeline& dp, bool& bTerminate) const
 {
@@ -53,7 +59,7 @@ bool CSampleFlowViewColorsConduit::OnInitFrameBuffer(CRhinoDisplayPipeline& dp, 
     
 }
 
-bool CSampleFlowViewColorsConduit::OnDrawBackground(CRhinoDisplayPipeline& dp, bool& bTerminate)
+bool CSampleFlowViewColorsConduit::OnDrawBackground(CRhinoDisplayPipeline& dp, bool& bTerminate) const
 {
     UNREFERENCED_PARAMETER(bTerminate);
 
