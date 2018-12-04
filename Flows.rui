@@ -31,7 +31,7 @@
         </text>
         <tool_bar_id>dabe1c72-c8ea-45bb-a0ee-2a794748d5ae</tool_bar_id>
       </tool_bar_group_item>
-      <dock_bar_info dpi_scale="125" dock_bar="False" docking="True" horz="False" visible="True" floating="False" mru_float_style="8192" bar_id="59472" mru_width="868" point_pos="72,0" float_point="-94,246" rect_mru_dock_pos="72,0,251,697" dock_location_u="59420" dock_location="left" float_size="243,317" />
+      <dock_bar_info dpi_scale="125" dock_bar="False" docking="True" horz="False" visible="True" floating="False" mru_float_style="8192" bar_id="59472" mru_width="868" point_pos="72,0" float_point="-94,246" rect_mru_dock_pos="72,0,251,725" dock_location_u="59420" dock_location="left" float_size="243,317" />
     </tool_bar_group>
   </tool_bar_groups>
   <tool_bars>
@@ -87,6 +87,7 @@
       <menu_text>
         <locale_1033>Import Geometry</locale_1033>
       </menu_text>
+      <script>ImportGeometry</script>
     </macro_item>
     <macro_item guid="cb9aa0d2-51ac-4aa4-99be-05cb048902ab" bitmap_id="de578d0f-fe73-4c23-b8db-f1e5651b0279">
       <text>

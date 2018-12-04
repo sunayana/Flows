@@ -5,6 +5,8 @@
 #include "rhinoSdkPlugInDeclare.h"
 #include "SampleFlowPlugIn.h"
 #include "Resource.h"
+#include "SampleImportGeometryDialog.h"
+#include "SampleImportGeometry.h"
 
 // The plug-in object must be constructed before any plug-in classes derived
 // from CRhinoCommand. The #pragma init_seg(lib) ensures that this happens.
@@ -157,6 +159,19 @@ BOOL CSampleFlowPlugIn::OnLoadPlugIn()
         if ( CRhinoFileUtilities::FileExists(path) )
             // Delete the RUI file.
             CRhinoFileUtilities::DeleteFile(path);
+
+        // Register import geometry dialog.
+        //CSampleImportGeometryDialog::Register
+        // Create our old-school dockbar
+        RhinoUiDockBarManager().CreateRhinoDockBar(
+            RUNTIME_CLASS(CSampleImportGeometry),
+            PlugInID(),
+            false,
+            AFX_IDW_DOCKBAR_FLOAT,
+            CBRS_ALIGN_ANY,
+            nullptr,
+            CBRS_TOOLTIPS | CBRS_SIZE_DYNAMIC | CBRS_TOOLTIPS | CBRS_FLYBY | CBRS_LEFT
+        );
     }
 
     

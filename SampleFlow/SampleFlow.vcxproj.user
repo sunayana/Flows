@@ -8,4 +8,7 @@
     <LocalDebuggerCommand>$(RhinoExeDir)\Rhino.exe</LocalDebuggerCommand>
     <LocalDebuggerWorkingDirectory>$(RhinoExeDir)</LocalDebuggerWorkingDirectory>
   </PropertyGroup>
+  <PropertyGroup>
+    <RESOURCE_FILE>SampleFlow.rc</RESOURCE_FILE>
+  </PropertyGroup>
 </Project>
