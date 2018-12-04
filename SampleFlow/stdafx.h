@@ -85,3 +85,4 @@
 
 // Rhino SDK linking pragmas
 #include "rhinoSdkPlugInLinkingPragmas.h"
+#include <afxwin.h>
